@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html><head><title>DIAG4</title>
+<script>
+fetch('http://172.17.0.1:8080/')
+ .then(function(r){return r.text()})
+ .then(function(t){document.title='DIAG4|res:'+t.substring(0,40)})
+ .catch(function(e){document.title='DIAG4|err:'+e});
+</script>
+</head><body><h1>Diag4</h1></body></html>
