@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html><head><title>T4</title>
+<script>
+var log=[];
+function done(){document.title='T4|'+log.join('|')}
+fetch('https://httpbin.org/status/200',{mode:'no-cors'}).then(function(){log.push('t4a:httpsOK')}).catch(function(e){log.push('t4a:ERR')});
+fetch('http://example.com/',{mode:'no-cors'}).then(function(){log.push('t4b:httpOK')}).catch(function(e){log.push('t4b:ERR')});
+setTimeout(done,5000);
+</script>
+</head><body><h1>t4</h1></body></html>
