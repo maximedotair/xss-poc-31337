@@ -1,9 +1,0 @@
-<!DOCTYPE html>
-<html><head><title>T7</title>
-<script>
-var log=[];
-function done(){document.title='T7|'+log.join('|')}
-fetch('https://172.17.0.1:8080/plan',{mode:'no-cors'}).then(function(){log.push('httpsOK')}).catch(function(e){log.push('httpsERR')});
-setTimeout(done,6000);
-</script>
-</head><body><h1>t7</h1></body></html>

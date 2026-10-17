@@ -1,9 +1,0 @@
-<!DOCTYPE html>
-<html><head><title>T6</title>
-<script>
-var log=[];
-function done(){document.title='T6|'+log.join('|')}
-fetch('http://example.com/',{mode:'no-cors'}).then(function(){log.push('httpOK')}).catch(function(e){log.push('httpERR:'+e)});
-setTimeout(done,5000);
-</script>
-</head><body><h1>t6</h1></body></html>
